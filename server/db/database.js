@@ -1,7 +1,6 @@
 const initSqlJs = require('sql.js');
 const path = require('path');
 const fs = require('fs');
-
 const DB_PATH = path.join(__dirname, 'expenses.db');
 
 let db;
