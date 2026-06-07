@@ -1,0 +1,94 @@
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stat { display: flex; flex-direction: column; gap: 2px; }
+
+.label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.bigNumber {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.sub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.chartWrap {
+  margin: -8px 0;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.catRow { display: flex; flex-direction: column; gap: 4px; }
+
+.catTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.catName {
+  font-size: 13px;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.catAmount {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.over { color: var(--accent2) !important; }
+
+.budgetBar {
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.budgetFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.budgetLabel {
+  font-size: 10px;
+  color: var(--text-muted);
+}

@@ -1,0 +1,61 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.bar select,
+.customDates input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 8px 12px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.bar select:focus,
+.customDates input:focus {
+  border-color: var(--accent);
+}
+
+.bar select option {
+  background: var(--surface2);
+}
+
+.customDates {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sep { color: var(--text-muted); font-size: 12px; }
+
+.exportBtn {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  padding: 8px 14px;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 0.15s, color 0.15s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.exportBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

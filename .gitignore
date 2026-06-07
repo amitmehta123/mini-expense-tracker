@@ -1,0 +1,8 @@
+node_modules/
+server/node_modules/
+client/node_modules/
+server/db/expenses.db
+client/dist/
+.env
+.env.local
+*.log

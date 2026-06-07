@@ -1,0 +1,115 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  width: min(420px, 92vw);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.header h2 { font-size: 20px; }
+
+.close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.close:hover { color: var(--text); }
+
+.hint {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.fields { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.row label {
+  font-size: 14px;
+  flex: 1;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 140px;
+}
+
+.prefix {
+  padding: 8px 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+  border-right: 1px solid var(--border);
+}
+
+.inputWrap input {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 8px 10px;
+  font-size: 13px;
+  width: 100%;
+  outline: none;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.actions { display: flex; gap: 10px; justify-content: flex-end; }
+
+.cancel {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.cancel:hover { border-color: var(--text-muted); color: var(--text); }
+
+.save {
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.save:hover { opacity: 0.9; }
+.save:disabled { opacity: 0.5; cursor: not-allowed; }
