@@ -1,6 +1,5 @@
 const request = require('supertest');
 const app = require('./index');
-
 describe('Expenses API', () => {
   let createdId;
 
