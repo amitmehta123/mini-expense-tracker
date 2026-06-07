@@ -1,6 +1,5 @@
 const express = require('express');
 const { getDb, save } = require('../db/database');
-
 const router = express.Router();
 const VALID_CATEGORIES = ['Food', 'Transport', 'Bills', 'Entertainment', 'Other'];
 
