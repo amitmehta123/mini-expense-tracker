@@ -1,7 +1,5 @@
 # SpendLess — Mini Expense Tracker
 
-> **Exercise 2** from the Studio Graphene Full Stack Developer Assessment.
-
 A full-stack expense tracking app built with Node.js + Express on the backend and React (Vite) on the frontend. Users can log daily spending across categories, filter by date range or category, and see a live summary of where their money is going — including a pie chart and per-category budget indicators.
 
 ---
