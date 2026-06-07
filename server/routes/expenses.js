@@ -1,7 +1,6 @@
 const express = require('express');
 const { v4: uuidv4 } = require('uuid');
 const { getDb, save } = require('../db/database');
-
 const router = express.Router();
 const VALID_CATEGORIES = ['Food', 'Transport', 'Bills', 'Entertainment', 'Other'];
 
